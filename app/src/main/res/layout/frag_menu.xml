@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@drawable/button_white"
+        android:id="@+id/menu_coffee"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:src="@drawable/menu_icon_coffee"
+            android:layout_width="260dp"
+            android:layout_height="180dp">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:textColor="@color/light_black"
+            android:id="@+id/menu_coffee_tv"
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:layout_gravity="center"
+            android:text="Coffee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/button_white"
+        android:id="@+id/menu_food"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:src="@drawable/menu_icon_food"
+            android:layout_width="260dp"
+            android:layout_height="180dp">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:textColor="@color/light_black"
+            android:id="@+id/menu_icon_food_tv"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:text="Food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/button_white"
+        android:id="@+id/menu_yogut"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:src="@drawable/menu_icon_yogut"
+            android:layout_width="260dp"
+            android:layout_height="180dp">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:textColor="@color/light_black"
+            android:id="@+id/menu_icon_yogut_tv"
+            android:textSize="28sp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="Yogut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>

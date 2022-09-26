@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="#E7EAEA"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:backgroundTint="#ddd"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:backgroundTint="#ddd"
+                    android:id="@+id/account_Name"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="30dp"
+                    android:textAlignment="center"
+                    android:text="김대각 님"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+                    android:backgroundTint="#ddd"
+                    android:layout_gravity="center"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/icon_hand"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="30dp"
+                    android:textAlignment="center"
+                    android:text="환영합니다!"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:backgroundTint="#ddd"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:backgroundTint="#ddd"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:background="@drawable/button_white"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp">
+
+                        <ImageView
+                            android:id="@+id/iv_star"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/icon_star"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:tint="@color/starbucks">
+                        </ImageView>
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:text="별 히스토리"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:background="@drawable/button_white"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp">
+
+                        <ImageView
+                            app:tint="@color/starbucks"
+                            android:src="@drawable/icon_bill"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </ImageView>
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:text="영수증 확인"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:background="@drawable/button_white"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp">
+
+                        <ImageView
+                            app:tint="@color/starbucks"
+                            android:src="@drawable/icon_heart"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </ImageView>
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:text="나만의 메뉴"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:backgroundTint="#ddd"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:background="@drawable/button_white"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp">
+
+                        <ImageView
+                            app:tint="@color/starbucks"
+                            android:src="@drawable/icon_private"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </ImageView>
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:text="개인정보 변경"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:background="@drawable/button_white"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp">
+
+                        <ImageView
+                            app:tint="@color/starbucks"
+                            android:src="@drawable/main_account"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </ImageView>
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:text="계정 정보"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_book"
+                        android:orientation="vertical"
+                        android:background="@drawable/button_white"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp">
+
+                        <ImageView
+                            app:tint="@color/starbucks"
+                            android:src="@drawable/icon_store"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </ImageView>
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:text="예약 하기"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:backgroundTint="#ddd"
+                android:background="@drawable/account_layout"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginBottom="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="#333"
+                        android:textStyle="bold"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/icon_card"
+                        android:textSize="18dp"
+                        android:layout_marginRight="30dp"
+                        android:text="스타벅스카드 등록"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="#333"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/icon_creditcard"
+                        android:textSize="18dp"
+                        android:text="카드 교환권 등록"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="30dp"
+                        android:textColor="#333"
+                        android:textStyle="bold"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/icon_coupon"
+                        android:textSize="18dp"
+                        android:layout_marginRight="90dp"
+                        android:text="쿠폰 등록"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <TextView
+                        android:textColor="#333"
+                        android:textStyle="bold"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/icon_hiscoupon"
+                        android:textSize="18dp"
+                        android:text="쿠폰 히스토리"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:backgroundTint="#ddd"
+                android:background="@drawable/account_layout"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginBottom="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="#333"
+                        android:textStyle="bold"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/icon_card"
+                        android:textSize="18dp"
+                        android:layout_marginRight="30dp"
+                        android:text="스타벅스카드 등록"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="#333"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/icon_creditcard"
+                        android:textSize="18dp"
+                        android:text="카드 교환권 등록"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="30dp"
+                        android:textColor="#333"
+                        android:textStyle="bold"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/icon_coupon"
+                        android:textSize="18dp"
+                        android:layout_marginRight="90dp"
+                        android:text="쿠폰 등록"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <TextView
+                        android:textColor="#333"
+                        android:textStyle="bold"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/icon_hiscoupon"
+                        android:textSize="18dp"
+                        android:text="쿠폰 히스토리"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:backgroundTint="#ddd"
+                android:background="@drawable/account_layout"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginBottom="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Gift"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="#333"
+                        android:textStyle="bold"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/icon_card"
+                        android:textSize="18dp"
+                        android:layout_marginRight="30dp"
+                        android:text="스타벅스카드 등록"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="#333"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/icon_creditcard"
+                        android:textSize="18dp"
+                        android:text="카드 교환권 등록"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="30dp"
+                        android:textColor="#333"
+                        android:textStyle="bold"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/icon_coupon"
+                        android:textSize="18dp"
+                        android:layout_marginRight="90dp"
+                        android:text="쿠폰 등록"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <TextView
+                        android:textColor="#333"
+                        android:textStyle="bold"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/icon_hiscoupon"
+                        android:textSize="18dp"
+                        android:text="쿠폰 히스토리"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:backgroundTint="#ddd"
+                android:background="@drawable/account_layout"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginBottom="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Delivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="#333"
+                        android:textStyle="bold"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/icon_card"
+                        android:textSize="18dp"
+                        android:layout_marginRight="30dp"
+                        android:text="스타벅스카드 등록"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="#333"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/icon_creditcard"
+                        android:textSize="18dp"
+                        android:text="카드 교환권 등록"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="30dp"
+                        android:textColor="#333"
+                        android:textStyle="bold"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/icon_coupon"
+                        android:textSize="18dp"
+                        android:layout_marginRight="90dp"
+                        android:text="쿠폰 등록"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <TextView
+                        android:textColor="#333"
+                        android:textStyle="bold"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/icon_hiscoupon"
+                        android:textSize="18dp"
+                        android:text="쿠폰 히스토리"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/button_round"
+                android:id="@+id/btn_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="로그아웃">
+            </Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
